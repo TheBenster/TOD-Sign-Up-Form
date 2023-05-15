@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@media only screen and (max-width: 917px) {
-    .imgContainer, .imgHeader, img {
-        display: none;
-    }
-}
+
 @media only screen and (max-width: 918px){
     .topBanner h2{
         font-size: 2vh;
     }
+   
+}
+@media only screen and (width: 1420px){
+    .mainForm{
+        height: 600px;
+    }
+   
 }
 
 
@@ -99,7 +102,7 @@ body{
     background-color: white;
     padding-left: var(--text-padding);
     box-shadow: 0px 2px 15px;
-    height: max(60%, 1290px);
+    height: 280px;
 }
 .formEntry{
     display:flex;
@@ -125,6 +128,7 @@ input{
 }
 
 .acct{
+    
     height: 20%;
     padding-left: var(--text-padding);
     padding-top: 30px;
