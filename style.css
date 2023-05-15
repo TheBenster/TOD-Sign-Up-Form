@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@media only screen and (max-width: 917px) {
+    .imgContainer, .imgHeader, img {
+        display: none;
+    }
+}
+@media only screen and (max-width: 918px){
+    .topBanner h2{
+        font-size: 2vh;
+    }
+}
+
+
+:root{
+    --text-padding: 40px;
+}
+body{
+    padding-bottom: 0;
+    margin: 0;
+    display: flex;
+    font-family: 'Roboto';
+}
+.imgHeader{
+    background-color: rgba(0,0,0,.7);
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    z-index:7;
+    width: 34%;
+    height: 15%;
+    opacity:40%;
+}
+.source{
+    position: absolute;
+    z-index: 8;
+    height: 100%;
+    display:flex;
+    justify-content: end;
+    color:white;
+    align-items: end;
+}
+.source a{
+    color:aqua;
+    text-decoration: none;
+}
+.source a:hover{
+    color: rgb(0, 197, 197);
+}
+.imgContainer h2{
+    position: absolute;
+    text-align: center;
+    color:white;
+    font-size: 50px;
+    z-index: 8;
+}
+
+
+.imgContainer{
+    z-index: 6;
+    height: 100vh;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgContainer img{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.rightSide{
+    display:flex;
+    flex-direction: column;
+    border-color: #212121;
+    width: 100%;
+}
+
+.topBanner{
+    background-color: rgb(249, 249, 249);
+    height: min(20%, 500px);
+    display:flex;
+    align-items: end;
+    padding: var(--text-padding);
+    z-index: 11;
+    padding-top: 40px;
+}
+
+.mainForm{
+    z-index: 10;
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    padding-left: var(--text-padding);
+    box-shadow: 0px 2px 15px;
+    height: max(60%, 1290px);
+}
+.formEntry{
+    display:flex;
+    flex-direction: column;
+    padding-right: 60px;
+    font-weight: 500;
+    color:rgb(78, 78, 78);
+}
+.entries {
+    width: 60%;
+    height: clamp(20%,70%, 100%);
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+input{
+    height: 20px;
+    width: 200px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color:rgb(233, 233, 233)
+}
+
+.acct{
+    height: 20%;
+    padding-left: var(--text-padding);
+    padding-top: 30px;
+}
+
+.acct button{
+    width: 170px;
+    height: 40px;
+    border-style: none;
+    border-radius: 8px;
+    background-color: cornflowerblue;
+    color:white;
+    font-weight: 500;
+}
+
+button:hover{
+    border-style: solid;
+    border-color: cornflowerblue;
+    color: cornflowerblue;
+    background-color: white;
+    cursor: pointer;
+    transition-duration: .7s;
+}
+
+button:not(:hover){
+    transition-duration: .7s;
+}
